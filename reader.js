@@ -9,7 +9,7 @@ function wordsBox(ita, eng){
 var dictionary = exports.dictionary = [];
 
 exports.read = function(cb){
-    fs.readFile("../input.txt", "utf8", function(err, data){
+    fs.readFile("input.txt", "utf8", function(err, data){
         var lines = data.split('\n');
 
         lines = lines.filter(function(line){
